@@ -8,30 +8,31 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.yellowAccent[100],
         body: SafeArea(
             child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
               radius: 50.0,
-              backgroundImage: AssetImage('images/angela.jpg'),
+              backgroundImage: AssetImage('images/msd.jpg'),
             ),
             Text(
-              'Angela Yu',
+              'MSD',
               style: TextStyle(
                 fontFamily: 'Pacifico',
                 fontSize: 40.0,
-                color: Colors.white,
+                color: Colors.black,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
-              'FLUTTER DEVELOPER',
+              'LEGEND',
               style: TextStyle(
                 fontFamily: 'Source Sans Pro',
-                color: Colors.teal.shade100,
+                color: Colors.pink,
                 fontSize: 20.0,
                 letterSpacing: 2.5,
                 fontWeight: FontWeight.bold,
@@ -41,20 +42,20 @@ class MyApp extends StatelessWidget {
               height: 20.0,
               width: 150.0,
               child: Divider(
-                color: Colors.teal.shade100,
+                color: Colors.pink,
               ),
             ),
             Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
-                    Icons.phone,
-                    color: Colors.teal,
+                    Icons.confirmation_number,
+                    color: Colors.pink,
                   ),
                   title: Text(
-                    '+44 123 456 789',
+                    '7',
                     style: TextStyle(
-                      color: Colors.teal.shade900,
+                      color: Colors.pink,
                       fontFamily: 'Source Sans Pro',
                       fontSize: 20.0,
                     ),
@@ -64,14 +65,14 @@ class MyApp extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
-                    Icons.email,
-                    color: Colors.teal,
+                    Icons.block,
+                    color: Colors.pink,
                   ),
                   title: Text(
-                    'angela@email.com',
+                    'Finisher',
                     style: TextStyle(
                         fontSize: 20.0,
-                        color: Colors.teal.shade900,
+                        color: Colors.pink,
                         fontFamily: 'Source Sans Pro'),
                   ),
                 ))
